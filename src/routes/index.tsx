@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Production software engineer shipping cross-platform apps in healthcare, energy, e-commerce and entertainment. Based in Salzburg, Austria.",
+          "A software engineer who developed and shipped cross-platform apps in healthcare, energy, e-commerce and entertainment. Based in Salzburg, Austria.",
       },
       { property: "og:title", content: "Yaikob Zeray Teklehayimanot — Software Engineer" },
       {
@@ -58,7 +58,7 @@ function Index() {
 
             <Section id="about" label="01 / About">
               <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">
-                A software engineer who has shipped cross-platform applications in
+                A software engineer who developed and shipped cross-platform applications in
                 healthcare, energy, e-commerce and entertainment. Experience owning full
                 delivery cycles from architecture to deployment with cross-functional teams.{" "}
                 <span className="text-foreground">

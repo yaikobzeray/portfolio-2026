@@ -35,7 +35,7 @@ export function Sidebar() {
           Software Engineer
         </p>
         <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
-          Production engineer shipping cross-platform apps in healthcare,
+          A software engineer who developed and shipped cross-platform apps in healthcare,
           energy, e-commerce &amp; entertainment.
         </p>
 
