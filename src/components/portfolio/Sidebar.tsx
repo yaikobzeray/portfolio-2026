@@ -49,18 +49,16 @@ export function Sidebar() {
                     href={`#${n.id}`}
                     onClick={(e) => handleNav(e, n.id)}
                     aria-current={isActive ? "true" : undefined}
-                    className={`group inline-flex items-center gap-4 font-mono text-xs uppercase tracking-[0.2em] transition-colors ${
-                      isActive
-                        ? "text-foreground"
-                        : "text-muted-foreground hover:text-foreground"
-                    }`}
+                    className={`group inline-flex items-center gap-4 font-mono text-xs uppercase tracking-[0.2em] transition-colors ${isActive
+                      ? "text-foreground"
+                      : "text-muted-foreground hover:text-foreground"
+                      }`}
                   >
                     <span
-                      className={`h-px transition-all duration-300 ${
-                        isActive
-                          ? "w-16 bg-primary"
-                          : "w-8 bg-border group-hover:w-16 group-hover:bg-primary"
-                      }`}
+                      className={`h-px transition-all duration-300 ${isActive
+                        ? "w-16 bg-primary"
+                        : "w-8 bg-border group-hover:w-16 group-hover:bg-primary"
+                        }`}
                     />
                     {n.label}
                   </a>
@@ -83,7 +81,7 @@ export function Sidebar() {
         </li>
         <li className="inline-flex items-center gap-3 text-muted-foreground">
           <Phone className="h-4 w-4" />
-          <span>+43 677 63130434</span>
+          <span className="pr-4">+43 677 63130434</span>
         </li>
         <li className="inline-flex items-center gap-3 text-muted-foreground">
           <MapPin className="h-4 w-4" />
