@@ -6,7 +6,7 @@ const items = [
     period: "Sep 2024 – Jun 2025",
     bullets: [
       "Built a solar education mobile app from scratch (Flutter) via Play Store release, delivering courses, authentication, and progress tracking via a REST API integration layer.",
-      "Created a shared Flutter component library reused across mobile and web, reducing per-screen development overhead.",
+      "Created a shared Flutter component library reused across mobile, reducing per-screen development overhead.",
     ],
     tags: ["Flutter", "Dart", "REST API", "Play Store"],
   },
