@@ -56,7 +56,7 @@ const projects: Array<{
       tagline: "Solar Education Platform",
       stack: ["Flutter", "Dart", "REST API"],
       body:
-        "Built a cross-platform solar education system from scratch (Flutter mobile + web) via Play Store release, delivering courses, authentication, and progress tracking via a REST API integration layer.",
+        "Built a solar education mobile app from scratch (Flutter) via Play Store release, delivering courses, authentication, and progress tracking via a REST API integration layer.",
       links: [
         {
           type: "play",

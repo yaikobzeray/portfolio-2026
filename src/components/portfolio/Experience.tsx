@@ -5,7 +5,7 @@ const items = [
     location: "Addis Ababa, Ethiopia",
     period: "Sep 2024 – Jun 2025",
     bullets: [
-      "Built a cross-platform solar education system from scratch (Flutter mobile + web) via Play Store release, delivering courses, authentication, and progress tracking via a REST API integration layer.",
+      "Built a solar education mobile app from scratch (Flutter) via Play Store release, delivering courses, authentication, and progress tracking via a REST API integration layer.",
       "Created a shared Flutter component library reused across mobile and web, reducing per-screen development overhead by 40%.",
     ],
     tags: ["Flutter", "Dart", "REST API", "Play Store"],
