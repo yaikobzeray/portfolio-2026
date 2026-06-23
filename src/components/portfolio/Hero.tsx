@@ -1,8 +1,7 @@
 import { ArrowDown, Download } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 
-const CV_URL = "/Yaikob-Zeray-Teklehayimanot-CV.pdf";
-const CV_FILENAME = "Yaikob-Zeray-Teklehayimanot-CV.pdf";
+const CV_URL = "https://drive.google.com/file/d/1GQ7PzGAzI9aTKwsppUJqQVZn0tIWpkOB/view";
 
 function scrollToProjects(e: React.MouseEvent<HTMLAnchorElement>) {
   e.preventDefault();
@@ -24,10 +23,11 @@ function CTAs() {
       </a>
       <a
         href={CV_URL}
-        download={CV_FILENAME}
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-mono text-foreground hover:border-primary hover:text-primary transition"
       >
-        Download CV <Download className="h-4 w-4" />
+        View CV <Download className="h-4 w-4" />
       </a>
     </>
   );
