@@ -52,6 +52,20 @@ const projects: Array<{
       ],
     },
     {
+      name: "Power Ethiopia",
+      tagline: "Solar Education Platform",
+      stack: ["Flutter", "Dart", "REST API"],
+      body:
+        "Built a cross-platform solar education system from scratch (Flutter mobile + web) via Play Store release, delivering courses, authentication, and progress tracking via a REST API integration layer.",
+      links: [
+        {
+          type: "play",
+          href: "https://play.google.com/store/apps/details?id=com.ethiopower.app&pcampaignid=web_share",
+          label: "Power Ethiopia on Google Play",
+        },
+      ],
+    },
+    {
       name: "Owl Events",
       tagline: "Event Management App",
       stack: ["Flutter", "Dart", "Clean Architecture"],
