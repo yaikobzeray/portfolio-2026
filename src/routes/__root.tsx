@@ -72,24 +72,83 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const JSON_LD_PERSON = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Yaikob Zeray Teklehayimanot",
+  url: "https://yaikob.tech/",
+  jobTitle: "Software Engineer",
+  description:
+    "Flutter developer and cross-platform mobile engineer based in Salzburg, Austria. MSc CS student at University of Salzburg.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Salzburg",
+    addressCountry: "AT",
+  },
+  sameAs: [
+    "https://github.com/yaikobzeray",
+    "https://linkedin.com/in/yaikob-zeray",
+  ],
+  alumniOf: [
+    {
+      "@type": "CollegeOrUniversity",
+      name: "University of Salzburg",
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      name: "Arbaminch University",
+    },
+  ],
+  knowsAbout: [
+    "Flutter",
+    "Dart",
+    "Cross-platform Mobile Development",
+    "Android",
+    "iOS",
+    "Python",
+    "Django",
+    "FastAPI",
+    "Go",
+    "Machine Learning",
+    "Clean Architecture",
+    "BLoC",
+    "REST API",
+    "Firebase",
+    "Docker",
+  ],
+});
+
+const JSON_LD_WEBSITE = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Yaikob Zeray Teklehayimanot — Portfolio",
+  url: "https://yaikob.tech/",
+});
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "author", content: "Yaikob Zeray Teklehayimanot" },
+      { name: "robots", content: "index, follow" },
+      // Structured data injected as script tags via links[] below
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: "https://yaikob.tech/" },
+      // Favicon
+      { rel: "icon", href: "/favicon.ico" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+    ],
+    scripts: [
       {
-        rel: "stylesheet",
-        href: appCss,
+        type: "application/ld+json",
+        children: JSON_LD_PERSON,
+      },
+      {
+        type: "application/ld+json",
+        children: JSON_LD_WEBSITE,
       },
     ],
   }),
