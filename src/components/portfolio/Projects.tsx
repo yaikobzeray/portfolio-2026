@@ -9,63 +9,63 @@ const projects: Array<{
   body: string;
   links: ProjectLink[];
 }> = [
-  {
-    name: "Zmare",
-    tagline: "Music Streaming App",
-    stack: ["Flutter", "Dart", "Laravel"],
-    body:
-      "Co-engineered a feature-rich audio streaming client with playlist management, queue control, and continuous playback against a Laravel REST backend. Centralized audio logic in a singleton BLoC controller to eliminate playback state bugs.",
-    links: [
-      {
-        type: "github",
-        href: "https://github.com/yaikobzeray/zmare",
-        label: "Zmare on GitHub",
-      },
-    ],
-  },
-  {
-    name: "WapTrend (SayHi)",
-    tagline: "Social Platform",
-    stack: ["Flutter", "Dart"],
-    body:
-      "Built core social features: feed, user profiles, follow mechanism, and post interactions using composable Flutter widgets. Used paginated ListView and lazy image loading for smooth performance.",
-    links: [
-      {
-        type: "github",
-        href: "https://github.com/yaikobzeray/waptrend",
-        label: "WapTrend on GitHub",
-      },
-    ],
-  },
-  {
-    name: "N-Grocery",
-    tagline: "Grocery Delivery Platform",
-    stack: ["Flutter", "Dart", "Dual-app"],
-    body:
-      "Built two Flutter apps (customer + vendor) connected through a common REST API backend. Covered product browsing, cart, checkout, live order tracking, and vendor management.",
-    links: [
-      {
-        type: "play",
-        href: "https://www.youtube.com/shorts/UDgKpptus2c?feature=share",
-        label: "N-Grocery Demo",
-      },
-    ],
-  },
-  {
-    name: "Owl Events",
-    tagline: "Event Management App",
-    stack: ["Flutter", "Dart", "Clean Architecture"],
-    body:
-      "Production app live on Google Play Store. End-to-end digital ticketing with QR validation in a 4-role stakeholder system.",
-    links: [
-      {
-        type: "play",
-        href: "https://play.google.com/store/search?q=owl+events&c=apps",
-        label: "Owl Events on Google Play",
-      },
-    ],
-  },
-];
+    {
+      name: "Zmare",
+      tagline: "Music Streaming App",
+      stack: ["Flutter", "Dart", "Laravel"],
+      body:
+        "Co-engineered a feature-rich audio streaming client with playlist management, queue control, and continuous playback against a Laravel REST backend. Centralized audio logic in a singleton BLoC controller to eliminate playback state bugs.",
+      links: [
+        {
+          type: "github",
+          href: "https://github.com/Menfesawi-Zmare/zmare-Mobile-APP",
+          label: "Zmare on GitHub",
+        },
+      ],
+    },
+    {
+      name: "WapTrend",
+      tagline: "Social Platform",
+      stack: ["Flutter", "Dart"],
+      body:
+        "Built core social features: feed, user profiles, follow mechanism, and post interactions using composable Flutter widgets. Used paginated ListView and lazy image loading for smooth performance.",
+      links: [
+        {
+          type: "github",
+          href: "https://github.com/yaikobzeray/waptrend-app",
+          label: "WapTrend on GitHub",
+        },
+      ],
+    },
+    {
+      name: "N-Grocery",
+      tagline: "Grocery Delivery Platform",
+      stack: ["Flutter", "Dart", "Dual-app"],
+      body:
+        "Built two Flutter apps (customer + vendor) connected through a common REST API backend. Covered product browsing, cart, checkout, live order tracking, and vendor management.",
+      links: [
+        {
+          type: "play",
+          href: "https://www.youtube.com/shorts/UDgKpptus2c?feature=share",
+          label: "N-Grocery Demo",
+        },
+      ],
+    },
+    {
+      name: "Owl Events",
+      tagline: "Event Management App",
+      stack: ["Flutter", "Dart", "Clean Architecture"],
+      body:
+        "Production app live on Google Play Store. End-to-end digital ticketing with QR validation in a 4-role stakeholder system.",
+      links: [
+        {
+          type: "play",
+          href: "https://play.google.com/store/search?q=owl+events&c=apps",
+          label: "Owl Events on Google Play",
+        },
+      ],
+    },
+  ];
 
 export function Projects() {
   return (
